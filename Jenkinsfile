@@ -16,7 +16,7 @@ pipeline {
                 sh 'cd app && docker build -t ts-demo-app .'
             }
         }
-        stage('Docker Build') {
+        stage('Docker Push') {
             steps {
                 sh '''
                     cd app
