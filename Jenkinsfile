@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        // stage('print') {
-        //     steps {
-        //         sh 'echo "Hello World"'
-        //     }
-        // }
+        stage('print') {
+            steps {
+                sh 'echo "Hello World"'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'cd app && npm install'
